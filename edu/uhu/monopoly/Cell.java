@@ -3,14 +3,14 @@ package edu.uhu.monopoly;
 public abstract class Cell {
 	private boolean available = true;
 	private String name;
-	protected Player owner;
+	protected Player proprietary;
 
 	public String getName() {
 		return name;
 	}
 
 	public Player getOwner() {
-		return owner;
+		return proprietary;
 	}
 	
 	public int getPrice() {
@@ -32,7 +32,7 @@ public abstract class Cell {
 	}
 
 	public void setOwner(Player owner) {
-		this.owner = owner;
+		this.proprietary = owner;
 	}
     
     public String toString() {
