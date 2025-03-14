@@ -1,6 +1,6 @@
 package edu.uhu.monopoly;
 
-public abstract class Cell {
+public abstract class Cell implements IOwnable {
 	private String name;
 	protected Player proprietary;
 	private boolean available = true;
@@ -9,6 +9,7 @@ public abstract class Cell {
 		return name;
 	}
 
+	@Override
 	public Player getOwner() {
 		return proprietary;
 	}
@@ -23,6 +24,7 @@ public abstract class Cell {
 		this.name = name;
 	}
 
+	@Override
 	public void setOwner(Player owner) {
 		this.proprietary = owner;
 	}
